@@ -40,12 +40,12 @@
       </section>
       <form class="input_box">
           <div class="input_box__number">
-              <label for="number">Wprowadź liczbę naturalną:</label>
-              <input class="number_form__input" type="text" required="required" id="number"></input>
+              <label for="number">Wprowadź liczbę:</label>
+              <input class="number_form__input" type="number" min="0" max="10" required="required" id="number"></input>
           </div>
           <div class="input_box__exponentiation">
-              <label for="expo">Ustaw potęgę będącą liczbą naturalną</label>
-              <input class="input_form__input" type="number" required="required" id="expo"></input>
+              <label for="expo">Ustaw potęgę:</label>
+              <input class="input_form__input" type="number" min="0" max="10" required="required" id="expo"></input>
           </div>
           <div class="button_box">
             <button class="button_box__button button_box__button--js" type="button">Rozbieramy</button>
