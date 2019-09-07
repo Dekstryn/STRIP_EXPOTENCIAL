@@ -7,8 +7,18 @@ buttonStart.addEventListener('click', (e) =>{
   localStorage.setItem("number", numberValue);
   const exponentiationValue = document.getElementById('expo').value;
   localStorage.setItem("exponentiation", exponentiationValue);
+  
+  function expotential (numberValue, exponentiationValue){
+    //Variable definition
+    const numberStr = numberValue.toString();
+    const i = 1;
+    const a = numberStr;
+    const b = numberStr;
+  }
+
   resultMultiplyText.textContent = "Liczba którą chcesz potęgować: " + numberValue;
   resultAddingText.textContent = "Potęga, jaką ustawiłeś: " + exponentiationValue;
+
 })
 
 
