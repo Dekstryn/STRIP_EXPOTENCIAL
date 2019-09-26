@@ -1,28 +1,33 @@
 "use strict"
 const buttonStart = document.querySelector('.button_box__button--js')
-const resultMultiplyText = document.querySelector('.result_multiply--js')
+const resultNumberText = document.querySelector('.result_number--js')
 const resultAddingText = document.querySelector('.result_adding--js')
+const resultMultiplyText = document.querySelector('.result_multiply--js')
 
 buttonStart.addEventListener('click', (e) =>{
+  //Variable definition
   const numberValue = document.getElementById('number').value;
-  localStorage.setItem("number", numberValue);
   const exponentiationValue = document.getElementById('expo').value;
-  localStorage.setItem("exponentiation", exponentiationValue);
-  
-  function expotential (number = localStorage.getItem("number"), exponentiation = localStorage.getItem("exponentiation")){
-    //Variable definition
-    const numberStr = number.toString();
-    const i = 1;
-    const a = numberStr;
-    const b = numberStr;
-    const pot = exponentiation;
-    const lic = number;
-    
+  const numberStr = numberValue.toString();
+  const i = 1;
+  const a = numberStr;
+  const b = numberStr;
+  let multiplyResult = 0;
+
+  if (numberValue == 0){
+    multiplyResult = 1;
   }
-
-  resultMultiplyText.textContent = "Liczba którą chcesz potęgować: " + numberValue;
+  else if (exponentiationValue == 0){
+    multiplyResult = 1;
+  }
+  else if (exponentiationValue == 1){
+    multiplyResult = numberValue;
+  }
+  
+  //print result
+  resultNumberText.textContent = "Liczba którą chcesz potęgować: " + numberValue;
   resultAddingText.textContent = "Potęga, jaką ustawiłeś: " + exponentiationValue;
-
+  resultMultiplyText.textContent = "Potęgowanie zapisane w formie mnożenia, będzie wyglądało następująco: " + multiplyResult;
 })
 
 
