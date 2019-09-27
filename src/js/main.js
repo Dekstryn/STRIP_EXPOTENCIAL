@@ -9,9 +9,9 @@ buttonStart.addEventListener('click', (e) =>{
   const numberValue = document.getElementById('number').value;
   const exponentiationValue = document.getElementById('expo').value;
   const numberStr = numberValue.toString();
-  const i = 1;
-  const a = numberStr;
-  const b = numberStr;
+  let i = 1;
+  let a = numberStr;
+  let b = numberStr;
   let multiplyResult = 0;
 
   if (numberValue == 0){
@@ -23,11 +23,20 @@ buttonStart.addEventListener('click', (e) =>{
   else if (exponentiationValue == 1){
     multiplyResult = numberValue;
   }
-  
+  else if (numberValue == 1){
+    multiplyResult = 1;
+  }
+  else {
+    while (i < exponentiationValue){
+      a = a + "*" + numberStr;
+      i +=1;
+    }
+    multiplyResult = a;
+  }
   //print result
-  resultNumberText.textContent = "Liczba którą chcesz potęgować: " + numberValue;
-  resultAddingText.textContent = "Potęga, jaką ustawiłeś: " + exponentiationValue;
-  resultMultiplyText.textContent = "Potęgowanie zapisane w formie mnożenia, będzie wyglądało następująco: " + multiplyResult;
+  resultNumberText.textContent = `Liczba którą chcesz potęgować: ${numberValue}`;
+  resultAddingText.textContent = `Potęga, jaką ustawiłeś: ${exponentiationValue}`;
+  resultMultiplyText.textContent = `Potęgowanie zapisane w formie mnożenia, będzie wyglądało następująco:  ${multiplyResult}`;
 })
 
 
