@@ -12,6 +12,8 @@ buttonStart.addEventListener('click', (e) =>{
   let i = 1;
   let a = numberStr;
   let b = numberStr;
+  let c = 1;
+  let k = 0;
   let multiplyResult = 0;
   //exceptions
   if (numberValue == 0){
@@ -32,7 +34,25 @@ buttonStart.addEventListener('click', (e) =>{
       a = a + "*" + numberStr;
       i +=1;
     }
+    i = 1;
     multiplyResult = a;
+    while (i < numberValue){
+      b = b + "+" + numberStr;
+      i += 1;
+    }
+    i = 1;
+    if (exponentiationValue > 2){
+      c = b;
+      k = numberValue ** (exponentiationValue - 2);
+      while (i < k){
+        c = c + "+" + b;
+        i += 1;
+      }
+      console.log(c);
+    }
+    else{
+      console.log(b);
+    }
   }
   //print result
   resultNumberText.textContent = `Liczba którą chcesz potęgować: ${numberValue}`;
