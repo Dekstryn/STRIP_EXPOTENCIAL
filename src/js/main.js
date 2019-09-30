@@ -16,19 +16,23 @@ buttonStart.addEventListener('click', (e) =>{
   let c = 1;
   let k = 0;
   let multiplyResult = 0;
-  let addinngResult = 0;
+  let addingResult = 0;
   //exceptions
   if (numberValue == 0){
-    multiplyResult = 1;
+    multiplyResult = 0;
+    addingResult = 0;
   }
   else if (exponentiationValue == 0){
     multiplyResult = 1;
+    addingResult = 1;
   }
   else if (exponentiationValue == 1){
     multiplyResult = numberValue;
+    addingResult = numberValue;
   }
   else if (numberValue == 1){
     multiplyResult = 1;
+    addingResult = 1;
   }
   //calculations
   else {
@@ -50,17 +54,17 @@ buttonStart.addEventListener('click', (e) =>{
         c = c + "+" + b;
         i += 1;
       }
-      addinngResult = c;
+      addingResult = c;
     }
     else{
-      addinngResult = b;
+      addingResult = b;
     }
   }
   //print result
   resultNumberText.textContent = `Liczba którą chcesz potęgować: ${numberValue}`;
   resultAddingText.textContent = `Potęga, jaką ustawiłeś: ${exponentiationValue}`;
   resultMultiplyText.textContent = `Potęgowanie zapisane w formie mnożenia, będzie wyglądało następująco: ${multiplyResult}`;
-  resultFinalAdding.textContent = `Potęgowanie zapisane w formie dodawania, będzie wyglądało następująco: ${addinngResult}`;
+  resultFinalAdding.textContent = `Potęgowanie zapisane w formie dodawania, będzie wyglądało następująco: ${addingResult}`;
 })
 
 
