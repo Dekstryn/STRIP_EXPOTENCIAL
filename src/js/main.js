@@ -15,6 +15,7 @@ buttonStart.addEventListener('click', (e) =>{
   let c = 1;
   let k = 0;
   let multiplyResult = 0;
+  let addinngResult = 0;
   //exceptions
   if (numberValue == 0){
     multiplyResult = 1;
@@ -48,10 +49,10 @@ buttonStart.addEventListener('click', (e) =>{
         c = c + "+" + b;
         i += 1;
       }
-      console.log(c);
+      addinngResult = c;
     }
     else{
-      console.log(b);
+      addinngResult = b;
     }
   }
   //print result
