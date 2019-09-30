@@ -2,7 +2,10 @@ body{
   background-color: black;
 }
 .web_head{
-  height: 30vh;
+  height: 5vh;
+&__logo{
+  margin: 5% 15% 5% 25%;
+}
 }
 .main{
   text-align: center;
