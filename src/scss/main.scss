@@ -1,12 +1,31 @@
 body{
   background-color: black;
+  margin: 20px;
 }
-.web_head{
-  height: 5vh;
-&__logo{
-  margin: 5% 15% 5% 25%;
+.head{
+  height: 15vh;
 }
+.head_diamond, .head_dia {
+  margin: 0 auto;
+  transform-origin: 50% 50%;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
 }
+.head_diamond {
+  transform: rotate(45deg) translateY(-25px) translateX(-25px);
+}
+.head_diamond .head_dia {
+  width: 380px;
+  height: 380px;
+  transform: rotate(-45deg);
+  margin: 15px;
+}
+.head_diamond img {
+  width: 100%;
+  height: auto;
+}
+
 .main{
   text-align: center;
   background-image: url(../assets/img/MathFractalBackground.jpg);
