@@ -36,7 +36,7 @@ body{
   background-image: url(../assets/img/MathFractalBackground.jpg);
   background-size: cover;
   background-position: top;
-  height: 600px;
+  height: 350px;
   margin-top: 280px;
 }
 .input_box{
@@ -50,4 +50,9 @@ body{
   color: aliceblue;
   font-size: 24px;
   line-height: 1.4;
+}
+@media(max-width: 610px){
+  .main{
+    background: black;
+  }
 }
