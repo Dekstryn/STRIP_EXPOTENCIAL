@@ -37,13 +37,13 @@ buttonStart.addEventListener('click', (e) =>{
   //calculations
   else {
     while (i < exponentiationValue){
-      a = a + "*" + numberStr;
+      a = a + " * " + numberStr;
       i +=1;
     }
     i = 1;
     multiplyResult = a;
     while (i < numberValue){
-      b = b + "+" + numberStr;
+      b = b + " + " + numberStr;
       i += 1;
     }
     i = 1;
@@ -51,7 +51,7 @@ buttonStart.addEventListener('click', (e) =>{
       c = b;
       k = numberValue ** (exponentiationValue - 2);
       while (i < k){
-        c = c + "+" + b;
+        c = c + " + " + b;
         i += 1;
       }
       addingResult = c;
