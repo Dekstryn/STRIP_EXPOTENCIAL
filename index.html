@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rozbież potęgowanie</title>
+    <meta name="Rozbież potęgowanie" content="Strona dzięki której w łatwy sposób rozbijesz potęgowanie na mnożenie, a mnożenie na dodawanie" />
+
+    <!-- Title -->
+    <meta property="og:title" content="Rozbież potęgowanie" />
+    <!-- OPTIONAL description. 2-4 sentences. -->
+    <meta property="og:description" content="Strona dzięki której w łatwy sposób rozbijesz potęgowanie na mnożenie, a mnożenie na dodawanie" />
+    <!-- full url with http(s) -->
+    <meta property="og:url" content="" />
+    <!-- full url to the image with http(s) -->
+    <meta property="og:image" content="" />
+
+    <link rel="manifest" href="manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link
+      rel="apple-touch-icon"
+      sizes="32x32"
+      href="assets/pwa/icons/favicon-32x32.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/pwa/icons/favicon-32x32.png"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="head">
+      <div class="head_diamond">
+        <div class="head_dia">
+          <img src="../assets/img/HeaderImgMini.png"" alt="" width="320" height="316" />
+        </div>
+      </div>  
+        <h1 class="head__title">Gotowy na matematyczne zabawy?</h1>
+    </header>
+    <main class="main">
+      <form class="input_box">
+          <div class="input_box__number">
+              <label for="number">Wprowadź liczbę:</label>
+              <input class="number_form__input" type="number" min="0" max="10" required="required" id="number"></input>
+          </div>
+          <div class="input_box__exponentiation">
+              <label for="expo">Ustaw potęgę:</label>
+              <input class="input_form__input" type="number" min="0" max="5" required="required" id="expo"></input>
+          </div>
+          <div class="button_box">
+            <button class="button_box__button button_box__button--js" type="button">Rozbieramy</button>
+          </div>
+      </form>
+      <section class="result">
+        <div class="result_number result_number--js"></div>
+        <div class="result_adding result_adding--js"></div>
+        <div class="result_multiply result_multiply--js"></div>
+        <div class="result_finalAdding result_finalAdding--js"></div>
+      </section>
+  </main>
+  <footer class="footer">Strona stworzona przez Krzysztofa Nyrek</footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
