@@ -1,9 +1,11 @@
 "use strict"
 const buttonStart = document.querySelector('.button_box__button--js')
 const resultNumberText = document.querySelector('.result_number--js')
-const resultAddingText = document.querySelector('.result_adding--js')
-const resultMultiplyText = document.querySelector('.result_multiply--js')
-const resultFinalAdding = document.querySelector('.result_finalAdding--js')
+const resultExponentiationText = document.querySelector('.result_exponentiation--js')
+const resultMultiplyText = document.querySelector('.result_multiplyText--js')
+const resultMultiply = document.querySelector('.result_multiply--js')
+const resultAddingText = document.querySelector('.result_AddingText--js')
+const resultAdding = document.querySelector('.result_Adding--js')
 
 buttonStart.addEventListener('click', (e) =>{
   //Variable definition
@@ -62,9 +64,11 @@ buttonStart.addEventListener('click', (e) =>{
   }
   //print result
   resultNumberText.textContent = `Liczba którą chcesz potęgować: ${numberValue}`;
-  resultAddingText.textContent = `Potęga, jaką ustawiłeś: ${exponentiationValue}`;
-  resultMultiplyText.textContent = `Potęgowanie zapisane w formie mnożenia, będzie wyglądało następująco: ${multiplyResult}`;
-  resultFinalAdding.textContent = `Potęgowanie zapisane w formie dodawania, będzie wyglądało następująco: ${addingResult}`;
+  resultExponentiationText.textContent = `Potęga, jaką ustawiłeś: ${exponentiationValue}`;
+  resultMultiplyText.textContent = `Potęgowanie zapisane w formie mnożenia, będzie wyglądało następująco:`;
+  resultMultiply.textContent = `${multiplyResult}`;
+  resultAddingText.textContent = `Potęgowanie zapisane w formie dodawania, będzie wyglądało następująco:`;
+  resultAdding.textContent = ` ${addingResult}`;
 })
 
 
