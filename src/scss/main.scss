@@ -27,16 +27,18 @@ body{
   width: 100%;
   height: auto;
 }
-.head__title{
-  color: bisque;
-  text-align: center;
-}
 .main{
   text-align: center;
-  background-image: url(../assets/img/MathFractalBackground.jpg);
-  background-size: cover;
-  background-position: top;
-  margin-top: 280px;
+  margin-top: 220px;
+  &__title{
+    color: bisque;
+    text-align: center;
+  }
+  &__paragrapf{
+    color: bisque;
+    text-align: center;
+    line-height: 30px;
+  }
 }
 .input_box{
   margin: 18px;
@@ -44,6 +46,9 @@ body{
   font-size: 36px;
   padding:36px;
   line-height: 1.8;
+  background-image: url(../assets/img/MathFractalBackground.jpg);
+  background-size: cover;
+  background-position: top;
 }
 .result{
   color: aliceblue;
