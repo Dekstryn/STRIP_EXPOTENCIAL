@@ -45,17 +45,17 @@
         <h1 class="main__title">Gotowy na matematyczne zabawy?</h1>
           <p class="main__paragrapf">
             Na stronie możesz w łatwy sposób zamienić potęgowanie na mnożenie i dodawanie. <br/>
-            Strona działa poprawnie w zakresie liczb (0 - 10) i potęg (0 - 5).
+            Strona działa poprawnie w zakresie liczb (0 - 9) i potęg (0 - 5).
           </p>
       </div>
       <form class="input_box">
           <div class="input_box__number">
               <label for="number">Wprowadź liczbę:</label>
-              <input class="number_form__input" type="number" min="0" max="10" required="required" id="number"></input>
+              <input class="number_form__input" type="number" min="0" max="9" pattern="[0-9]{1}" required="required" id="number"></input>
           </div>
           <div class="input_box__exponentiation">
               <label for="expo">Ustaw potęgę:</label>
-              <input class="input_form__input" type="number" min="0" max="5" required="required" id="expo"></input>
+              <input class="input_form__input" type="number" min="0" max="5" pattern="[0-5]{1}" required="required" id="expo"></input>
           </div>
           <div class="button_box">
             <button class="button_box__button button_box__button--js" type="button">Rozbieramy</button>
