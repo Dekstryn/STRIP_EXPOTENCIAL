@@ -344,7 +344,10 @@ body {
 
 .main {
   text-align: center;
-  margin-top: 250px; }
+  margin-top: 220px; }
+  @media (max-width: 768px) {
+    .main {
+      margin-top: 250px; } }
   .main__title {
     color: bisque;
     text-align: center;
